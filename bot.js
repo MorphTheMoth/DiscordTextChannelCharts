@@ -21,7 +21,7 @@ bot.on("ready", async() => {
 
   finalMs = finalMs.filter(v => v.content!='');
 
-  fs.writeFileSync('jsonDiscord/gruppo 8.json', JSON.stringify(finalMs, null, 2));
+  fs.writeFileSync('jsonDiscord/' + ch.name + '.json', JSON.stringify(finalMs, null, 2));
   console.log('done');
 });
 
