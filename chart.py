@@ -7,7 +7,7 @@ channelName = 'INSERT CHANNEL NAME HERE'
 
 plt.rcdefaults()
 fig, ax = plt.subplots()
-f = open('jsonDiscord/'+channelName+'.json', 'r', encoding='utf-8')
+f = open(channelName+'.json', 'r', encoding='utf-8')
 data = json.loads(f.read())
 messages = list(map(lambda m: m['content'], data))
 words = (' '.join(messages)).split(' ')
