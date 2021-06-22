@@ -6,7 +6,7 @@ const fs = require('fs');
 bot.on("ready", async() => {
   console.log("I am ready!");
 
-  let ch = bot.channels.get('780776976776298496');
+  let ch = bot.channels.get('INSERT CHANNEL ID HERE');
   let finalMs = (await ch.fetchMessages({ limit: 100 })).array();
   finalMs = finalMs.map(m => { return { content: m.content, id: m.id, user: m.author.username, userid: m.author.id, timestamp: m.createdTimestamp, data: m.createdAt }; });
 
