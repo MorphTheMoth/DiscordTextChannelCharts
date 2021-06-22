@@ -3,9 +3,11 @@ import json
 import matplotlib.pyplot as plt
 import numpy as np
 
+channelName = 'INSERT CHANNEL NAME HERE'
+
 plt.rcdefaults()
 fig, ax = plt.subplots()
-f = open('jsonDiscord/gruppo 8.json', 'r', encoding='utf-8')
+f = open('jsonDiscord/'+channelName+'.json', 'r', encoding='utf-8')
 data = json.loads(f.read())
 messages = list(map(lambda m: m['content'], data))
 words = (' '.join(messages)).split(' ')
@@ -39,7 +41,7 @@ ax.barh(y_pos, val, align='center')
 ax.set_yticks(y_pos)
 ax.set_yticklabels(name)
 ax.invert_yaxis()
-ax.set_xlabel('occorrenze')
-ax.set_title('gruppo 8')
+ax.set_xlabel('occurrences')
+ax.set_title(channelName)
 
 plt.show()
