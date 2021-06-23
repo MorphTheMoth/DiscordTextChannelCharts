@@ -17,3 +17,8 @@ to use this you need to have:
 -- now you should have a *channelName*.json file
 6) add the channel name in the chart.py file (6th line)
 7) open the chart.py file, or write `py "path/to/chart.py"` in cmd
+
+
+# example
+
+![image](https://user-images.githubusercontent.com/36893247/123089283-08b7ac00-d427-11eb-8b44-fa07753cff8a.png)
